@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlowerShop - Fresh Flowers Delivery</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem 5%;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            padding: 3rem 5%;
+            background-color: #f8f9fa;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .feature-card h3 {
+            color: #667eea;
+            margin-bottom: 1rem;
+        }
+
+        .products {
+            padding: 4rem 5%;
+        }
+
+        .products h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #333;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 250px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+        }
+
+        .product-info {
+            padding: 1.5rem;
+        }
+
+        .product-info h3 {
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+
+        .product-info p {
+            color: #666;
+            margin-bottom: 1rem;
+        }
+
+        .product-price {
+            font-size: 1.5rem;
+            color: #667eea;
+            font-weight: bold;
+        }
+
+        .about {
+            background-color: #f8f9fa;
+            padding: 4rem 5%;
+            text-align: center;
+        }
+
+        .about h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #333;
+        }
+
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        .delivery {
+            padding: 4rem 5%;
+        }
+
+        .delivery h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #333;
+        }
+
+        .delivery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .delivery-item {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .delivery-item h3 {
+            color: #667eea;
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            background: #2c3e50;
+            color: white;
+            padding: 3rem 5%;
+            text-align: center;
+        }
+
+        footer h3 {
+            margin-bottom: 1rem;
+            color: #667eea;
+        }
+
+        footer p {
+            margin-bottom: 0.5rem;
+        }
+
+        footer a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>FlowerShop</h1>
+        <p>Fresh Flowers for Every Occasion</p>
+    </header>
+
+    <section class="features">
+        <div class="feature-card">
+            <h3>Fresh Daily</h3>
+            <p>New flowers delivered every morning</p>
+        </div>
+        <div class="feature-card">
+            <h3>Fast Delivery</h3>
+            <p>Same-day delivery available</p>
+        </div>
+        <div class="feature-card">
+            <h3>Flexible Payment</h3>
+            <p>Card, cash on delivery, Apple/Google Pay</p>
+        </div>
+        <div class="feature-card">
+            <h3>Expert Florists</h3>
+            <p>Professional bouquet arrangements</p>
+        </div>
+    </section>
+
+    <section class="products">
+        <h2>Popular Bouquets</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-image">Flower Image</div>
+                <div class="product-info">
+                    <h3>Red Roses Bouquet</h3>
+                    <p>12 premium red roses</p>
+                    <div class="product-price">$49.99</div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">Flower Image</div>
+                <div class="product-info">
+                    <h3>Mixed Tulips</h3>
+                    <p>15 colorful tulips arrangement</p>
+                    <div class="product-price">$39.99</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <h2>About Us</h2>
+    </section>
+
+    <section class="delivery">
+        <h2>Delivery & Payment</h2>
+        <div class="delivery-grid">
+            <div class="delivery-item">
+                <h3>📦 Shipping</h3>
+                <p>Nationwide delivery (1-3 days)</p>
+                <p>Same-day dispatch before 5:00 PM</p>
+                <p>Free shipping on orders over $50</p>
+            </div>
+            <div class="delivery-item">
+                <h3>💳 Payment Methods</h3>
+                <p>Credit/Debit Card</p>
+                <p>Apple Pay / Google Pay</p>
+                <p>Cash on Delivery</p>
+                <p>Bank Transfer for Business</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <h3>Contact Us</h3>
+    </footer>
+</body>
+</html>
